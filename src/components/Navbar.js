@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 
-export default function Navbar(props) {
+const Navbar = ({title}) => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">{props.title}</a>
+        <a class="navbar-brand" href="/">{title}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,3 +34,5 @@ Navbar.propTypes = {
 Navbar.defaultProps = {
   title: "Title goes here"
 }
+
+export default Navbar;
