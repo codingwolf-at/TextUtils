@@ -27,6 +27,10 @@ const TextForm = () => {
     setText("");
   }
 
+  const copyTextHandler = () => {
+    navigator.clipboard.writeText(text);
+  }
+
   return (
     <>
       <div className="container">
@@ -39,6 +43,7 @@ const TextForm = () => {
         <button className="btn btn-primary mx-2" onClick={reverseTextHandler}>Reverse whole text</button>
         <button className="btn btn-primary mx-2" onClick={removeSpaceHandler}>Remove extra space</button>
         <button className="btn btn-primary mx-2" onClick={clearTextHandler}>Clear Text</button>
+        <button className="btn btn-primary mx-2" onClick={copyTextHandler}>Copy Text</button>
       </div>
       <div className="container">
         <h2 className="my-3 display-6">Your text summary: </h2>
