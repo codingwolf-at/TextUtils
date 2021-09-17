@@ -47,8 +47,8 @@ const TextForm = () => {
       </div>
       <div className="container">
         <h2 className="my-3 display-6">Your text summary: </h2>
-        <p>{text.trim().split(" ").length} words and {text.length} characters</p>
-        <p>{0.008 * (text.trim().split(" ").length)} minutes read</p>
+        <p>👉🏼 <strong>{text.trim().split(" ").length}</strong> words and <strong>{text.length}</strong> characters</p>
+        <p>👉🏼 <strong>{0.008 * (text.trim().split(" ").length)}</strong> minutes read</p>
       </div>
     </>
   )
